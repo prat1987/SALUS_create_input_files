@@ -66,7 +66,7 @@ def create_xdb(
 
             # Loop through the SoilIDs.
             for i,soil_id in enumerate(soilID_list):
-                print("-Writing soil", soil_id)
+                st.write("-Writing soil", soil_id)
                 # Convert soilID to a string
                 soil_id = str(soil_id)
 
@@ -76,7 +76,7 @@ def create_xdb(
 
                 # Loop through the N rates.
                 for N_rate in N_rate_list:
-                    print("---Writing N rate", N_rate)
+                    st.write("---Writing N rate", N_rate)
 
                     expID += 1
 

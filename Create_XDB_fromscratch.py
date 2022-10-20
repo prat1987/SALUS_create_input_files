@@ -1,5 +1,6 @@
 from ast import Num
 from curses.ascii import SP
+#from msilib.schema import CheckBox
 import streamlit as st
 from streamlit_tags import st_tags
 #import xml.etree.ElementTree as ET
@@ -59,6 +60,11 @@ def convert_str(dlist):
 #@st.cache()
 def get_data():
     return []
+
+@st.cache(allow_output_mutation=True)
+#@st.cache()
+def exp_data():
+    return []
 #st.write('Soil file:', sdb_file)
 
 #Weather file 
@@ -91,13 +97,13 @@ else:
         "Please select one option", #Drop Down Menu Name
 
         [
-            "Spin up",
+            "Experiment",
             "Regular Runs", #First option in menu
         
         ]
     )
     
-    if (selection=="Spin up"):
+    if (selection=="Experiment"):
         st.markdown('## Select different options for run type')
         with st.form(key='Initial'):
             SALUS_start = st.slider(label='SALUS start year', key='Year start',value=int(1980),\
@@ -112,7 +118,7 @@ else:
             #Start DOY 
             start_doy = 1
             
-
+            wx_id = st.text_input('### Weather Station ID','39.7333N_89.9333W')
             soilID_list = st_tags(
             label='### Enter Soil IDs:',
             text='Press enter to add more',
@@ -163,6 +169,11 @@ else:
                 crop_mode = st.text_input('Crop mode','C')
                 speciesID = st.text_input('Crop ID','MZ')
                 cultivar = st.text_input('Crop cultivar','17167')
+            else:
+                crop_name = ''
+                crop_mode = ''
+                speciesID = ''
+                cultivar = ''
                 
             # PLANTING
             if Planting:
@@ -392,31 +403,59 @@ else:
                     st.write("Fertilizer depths (cm)",fert_depth_list)
                     st.write("Fertilizer split fractions (0-1)",fert_amt_frac_list)
 
+    row1,row2=st.columns([1,1])
+    with row1:
+        M_data=st.checkbox('Management details')
+    with row2:
+        E_data=st.checkbox('Experiment details')          
+    
     col1, col2, col3,col4 = st.columns([1,1,1,1])
 
     with col1:
         add_data=st.button('Add entry')
+        
     with col2:
         remove_last=st.button('Delete last entry')
     with col3:
         reset_data=st.button('Reset')
+        
     with col4:
         show_data=st.button('Show')
-            
+
+     
     # add_data=st.button('Add entry to DataFrame')
     # remove_last=st.button('Delete last entry to DataFrame')
     # reset_data=st.button('Reset DataFrame')
     if show_data:
-        st.write(pd.DataFrame(get_data()))
+        if E_data:
+            st.write("## Experimental dataset")
+            st.write(pd.DataFrame(exp_data()))
+        if M_data:  
+            st.write("## Management dataset")
+            st.write(pd.DataFrame(get_data()))
     if remove_last:
         get_data().pop() 
+        st.write("## Management dataset")
         st.write(pd.DataFrame(get_data())) 
     if (reset_data):
-        get_data().clear() 
-        st.write(pd.DataFrame(get_data()))  
+        if M_data:
+            st.write("## Management dataset")
+            get_data().clear() 
+            st.write(pd.DataFrame(get_data()))
+        if E_data:  
+            exp_data().clear() 
+            st.write("## Experimental dataset")
+            st.write(pd.DataFrame(exp_data()))
+
     if (add_data):
         if (Error_enter==False):
-            get_data().append({"crop_name":crop_name, "crop_mode": crop_mode, "speciesID":speciesID,\
+            if E_data:
+            
+                exp_data().append({"SALUS_start":SALUS_start,"SALUS_end":SALUS_end, "start_doy":start_doy,\
+                "wx_id":wx_id, "soilID_list":soilID_list,"N_rate_list":N_rate_list})
+
+            if M_data: 
+                get_data().append({"crop_name":crop_name, "crop_mode": crop_mode, "speciesID":speciesID,\
                    "cultivar": cultivar,"plant_depth":plant_depth,"yearp":yearp,"ppop":ppop ,"rowspc":rowspc,\
                     "pdoy":pdoy,"irrFlag":irrFlag,"irr_method":irr_method,"dsoil":dsoil,"thetaC":thetaC,"endPt":endPt,\
                     "Num_fert_event":Num_fert_event,"fert_amt_frac_list":fert_amt_frac_list,"fdoy_list":fdoy_list,"yearf_list":yearf_list,\
@@ -426,9 +465,11 @@ else:
         else:
             st.write('First check all the error msg for the data input')
         #Main_datframe=pd.DataFrame(get_data())
-
+        st.write("## Experimental dataset")
+        st.write(pd.DataFrame(exp_data()))
+        st.write("## Management dataset")
         st.write(pd.DataFrame(get_data()))
-
+        
 
 
             
@@ -437,33 +478,42 @@ else:
 
     
     
-    wx_id = "39.7333N_89.9333W"
+    
     #load = st.checkbox('Load soil data')
     #if load:
     
     # Open the xdb file for writing.
     if st.button('Create file'):
-        st.write('Inside button')
         Main_datframe=pd.DataFrame(get_data())
-        #root,tree=read_soil(sdb_file)
-        create_xdb(
-        xdb_file,
-        sdb_file,
-        wdb_file,
-        cdb_file,
-        wx_id,
-        cultivar,
-        soilID_list,
-        N_rate_list,
-        SALUS_start,
-        SALUS_end,
-        Main_datframe,
-        start_doy=start_doy,
-        Irrigation=Irrigation,
-        Planting=Planting,
-        split_fertapp=split_fertapp,
-         Tillage=Tillage,
-         Harvest=Harvest)
+        Exp_dataframe=pd.DataFrame(exp_data())
+        st.write(len(Main_datframe.index))
+        st.write(len(Exp_dataframe.index))
+        if (not Main_datframe.empty and not Exp_dataframe.empty):
+        #
+            
+            #root,tree=read_soil(sdb_file)
+            st.write("Start writing")
+            create_xdb(
+            xdb_file,
+            sdb_file,
+            wdb_file,
+            cdb_file,
+            str(wx_id),
+            cultivar,
+            soilID_list,
+            N_rate_list,
+            SALUS_start,
+            SALUS_end,
+            Main_datframe,
+            start_doy=start_doy,
+            Irrigation=Irrigation,
+            Planting=Planting,
+            split_fertapp=split_fertapp,
+            Tillage=Tillage,
+            Harvest=Harvest)
+            st.write("Done writing")
+        else:
+            st.write("##Opps! File will not be created, Please check both the data boxes and add data to both dataframes")
 
 
         
