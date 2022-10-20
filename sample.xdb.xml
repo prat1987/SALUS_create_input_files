@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XDB>
+  <Experiment ExpID="1" Title="0|199353" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199353" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.70" />
+      <Layer DLayrI="152.0" INinorg="0.92" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="0.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="2" Title="150|199353" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199353" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.70" />
+      <Layer DLayrI="152.0" INinorg="0.92" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="49.50" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="3" Title="200|199353" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199353" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.70" />
+      <Layer DLayrI="152.0" INinorg="0.92" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="66.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="4" Title="0|199290" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199290" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.67" />
+      <Layer DLayrI="152.0" INinorg="0.95" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="0.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="5" Title="150|199290" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199290" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.67" />
+      <Layer DLayrI="152.0" INinorg="0.95" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="49.50" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="6" Title="200|199290" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199290" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.67" />
+      <Layer DLayrI="152.0" INinorg="0.95" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="66.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="7" Title="0|199312" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199312" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.80" />
+      <Layer DLayrI="152.0" INinorg="0.93" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="0.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="8" Title="150|199312" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199312" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.80" />
+      <Layer DLayrI="152.0" INinorg="0.93" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="49.50" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+  <Experiment ExpID="9" Title="200|199312" NYrs="18" SYear="1980" SDOY="1" ISwWat="Y" ISwNit="Y" ISwPho="N" Frop="1" Soilfp="CONUS.sdb.xml" SoilID="199312" Weatherfp="sample.wdb.xml" StationID="39.7333N_89.9333W" Cropfp="sample.cdb.xml" NRrepSq="0" MeEvp="R" MeInf="R" kResOrg="3.914E-5" kSloOrg="0.00013699" >
+    <Mgt_InitialCond Year="1980" DOY="1" >
+      <Layer DLayrI="30" INinorg="2.80" />
+      <Layer DLayrI="152.0" INinorg="0.93" />
+    </Mgt_InitialCond>
+    <Rotation_Components>
+      <Component OrderNum="1" Title="Maize" IPltI="R" IIrrI="N" IferI="R" IResI="R" ITilI="R" IHarI="R" IEnvI="N">
+        <Mgt_Planting CropMod="C" SpeciesID="MZ" CultivarID="17167" Year="1980" DOY="121" Ppop="8" Ppoe="8" PlMe="S" PlDs="R" RowSpc="76" SDepth="30" />
+        <Mgt_Fertilizer_App Year="1980" DOY="121" IFType="FE001" FerCode="AP001" FInP="100" DFert="0" ACrbFer="0" ANFer="66.00" APFer="0" AKFer="0" ACFer="0" AOFer="0" FerDecRt="0" VolN="0" VolNRate="0" />
+        <Mgt_Tillage_App Year="1980" DOY="119" TImpl="TI002" TDep="10" />
+        <Mgt_Harvest_App Year="1980" DOY="334" HCom="H" HPc="100" HBmin="0" HBPc="0" HKnDnPc="100" />
+      </Component>
+    </Rotation_Components>
+  </Experiment>
+</XDB>
