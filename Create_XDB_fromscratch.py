@@ -8,16 +8,17 @@ import xml
 import pandas as pd
 import numpy as np
 from create_xdb import create_xdb
-from misc_func import check_exists_error
+from misc_func import check_exists_error,read_wx
+import hiplot as hip
 st.write("""
-# Create Experimental file (*xdb.xml) for SALUS
+# SALUS utility app
 """)
 
 st.write('Author: Prateek Sharma, Graduate Student in the Basso Lab at MSU'
 )
 
 st.write('Note: This app will create a customized experimental file for running SALUS\
-     based on user input.\
+     based on user input.Also, the user can visualize the weather input data using Hiplot\
      However, before using this app make sure that you have the following files in the same folder as *.py: **soil file (sdb.xml)**,\
         **weather file (wbd.xml)**,\
         **crop file (cbd.xml)**')
@@ -68,7 +69,7 @@ def exp_data():
 #st.write('Soil file:', sdb_file)
 
 #Weather file 
-wdb_file= st.sidebar.text_input('Weather file name','sample.wdb.xml')
+wdb_file= st.sidebar.text_input('Weather file name','39.720420N_89.920985W_100yrs.wdb.xml')
 
 
 #Crop file 
@@ -98,7 +99,8 @@ else:
 
         [
             "Experiment",
-            "Regular Runs", #First option in menu
+            "Plot weather",
+            "Output analysis" #First option in menu
         
         ]
     )
@@ -118,7 +120,7 @@ else:
             #Start DOY 
             start_doy = 1
             
-            wx_id = st.text_input('### Weather Station ID','39.7333N_89.9333W')
+            wx_id = st.text_input('### Weather Station ID','39.720420N_89.920985W')
             soilID_list = st_tags(
             label='### Enter Soil IDs:',
             text='Press enter to add more',
@@ -403,73 +405,73 @@ else:
                     st.write("Fertilizer depths (cm)",fert_depth_list)
                     st.write("Fertilizer split fractions (0-1)",fert_amt_frac_list)
 
-    row1,row2=st.columns([1,1])
-    with row1:
-        M_data=st.checkbox('Management details')
-    with row2:
-        E_data=st.checkbox('Experiment details')          
-    
-    col1, col2, col3,col4 = st.columns([1,1,1,1])
-
-    with col1:
-        add_data=st.button('Add entry')
+        row1,row2=st.columns([1,1])
+        with row1:
+            M_data=st.checkbox('Management details')
+        with row2:
+            E_data=st.checkbox('Experiment details')          
         
-    with col2:
-        remove_last=st.button('Delete last entry')
-    with col3:
-        reset_data=st.button('Reset')
-        
-    with col4:
-        show_data=st.button('Show')
+        col1, col2, col3,col4 = st.columns([1,1,1,1])
 
-     
-    # add_data=st.button('Add entry to DataFrame')
-    # remove_last=st.button('Delete last entry to DataFrame')
-    # reset_data=st.button('Reset DataFrame')
-    if show_data:
-        if E_data:
-            st.write("## Experimental dataset")
-            st.write(pd.DataFrame(exp_data()))
-        if M_data:  
-            st.write("## Management dataset")
-            st.write(pd.DataFrame(get_data()))
-    if remove_last:
-        get_data().pop() 
-        st.write("## Management dataset")
-        st.write(pd.DataFrame(get_data())) 
-    if (reset_data):
-        if M_data:
-            st.write("## Management dataset")
-            get_data().clear() 
-            st.write(pd.DataFrame(get_data()))
-        if E_data:  
-            exp_data().clear() 
-            st.write("## Experimental dataset")
-            st.write(pd.DataFrame(exp_data()))
-
-    if (add_data):
-        if (Error_enter==False):
-            if E_data:
+        with col1:
+            add_data=st.button('Add entry')
             
-                exp_data().append({"SALUS_start":SALUS_start,"SALUS_end":SALUS_end, "start_doy":start_doy,\
-                "wx_id":wx_id, "soilID_list":soilID_list,"N_rate_list":N_rate_list})
+        with col2:
+            remove_last=st.button('Delete last entry')
+        with col3:
+            reset_data=st.button('Reset')
+            
+        with col4:
+            show_data=st.button('Show')
 
-            if M_data: 
-                get_data().append({"crop_name":crop_name, "crop_mode": crop_mode, "speciesID":speciesID,\
-                   "cultivar": cultivar,"plant_depth":plant_depth,"yearp":yearp,"ppop":ppop ,"rowspc":rowspc,\
-                    "pdoy":pdoy,"irrFlag":irrFlag,"irr_method":irr_method,"dsoil":dsoil,"thetaC":thetaC,"endPt":endPt,\
-                    "Num_fert_event":Num_fert_event,"fert_amt_frac_list":fert_amt_frac_list,"fdoy_list":fdoy_list,"yearf_list":yearf_list,\
-                     "fert_type_list":fert_type_list,"fert_depth_list":fert_depth_list,"fert_code_list":fert_code_list,"Nfert":N_rate_list,\
-                    "Num_till_event":Num_till_event,"tdoy_list":tdoy_list,"yeart_list":yeart_list,"tillage_tool_list":tillage_tool_list,"tillage_depth_list":tillage_depth_list,\
-                       "yearh":yearh, "hdoy":hdoy,"hcom":hcom,"hpc":hpc,"knock_down":knock_down,"hbpc":hbpc})
-        else:
-            st.write('First check all the error msg for the data input')
-        #Main_datframe=pd.DataFrame(get_data())
-        st.write("## Experimental dataset")
-        st.write(pd.DataFrame(exp_data()))
-        st.write("## Management dataset")
-        st.write(pd.DataFrame(get_data()))
         
+        # add_data=st.button('Add entry to DataFrame')
+        # remove_last=st.button('Delete last entry to DataFrame')
+        # reset_data=st.button('Reset DataFrame')
+        if show_data:
+            if E_data:
+                st.write("## Experimental dataset")
+                st.write(pd.DataFrame(exp_data()))
+            if M_data:  
+                st.write("## Management dataset")
+                st.write(pd.DataFrame(get_data()))
+        if remove_last:
+            get_data().pop() 
+            st.write("## Management dataset")
+            st.write(pd.DataFrame(get_data())) 
+        if (reset_data):
+            if M_data:
+                st.write("## Management dataset")
+                get_data().clear() 
+                st.write(pd.DataFrame(get_data()))
+            if E_data:  
+                exp_data().clear() 
+                st.write("## Experimental dataset")
+                st.write(pd.DataFrame(exp_data()))
+
+        if (add_data):
+            if (Error_enter==False):
+                if E_data:
+                
+                    exp_data().append({"SALUS_start":SALUS_start,"SALUS_end":SALUS_end, "start_doy":start_doy,\
+                    "wx_id":wx_id, "soilID_list":soilID_list,"N_rate_list":N_rate_list})
+
+                if M_data: 
+                    get_data().append({"crop_name":crop_name, "crop_mode": crop_mode, "speciesID":speciesID,\
+                    "cultivar": cultivar,"plant_depth":plant_depth,"yearp":yearp,"ppop":ppop ,"rowspc":rowspc,\
+                        "pdoy":pdoy,"irrFlag":irrFlag,"irr_method":irr_method,"dsoil":dsoil,"thetaC":thetaC,"endPt":endPt,\
+                        "Num_fert_event":Num_fert_event,"fert_amt_frac_list":fert_amt_frac_list,"fdoy_list":fdoy_list,"yearf_list":yearf_list,\
+                        "fert_type_list":fert_type_list,"fert_depth_list":fert_depth_list,"fert_code_list":fert_code_list,"Nfert":N_rate_list,\
+                        "Num_till_event":Num_till_event,"tdoy_list":tdoy_list,"yeart_list":yeart_list,"tillage_tool_list":tillage_tool_list,"tillage_depth_list":tillage_depth_list,\
+                        "yearh":yearh, "hdoy":hdoy,"hcom":hcom,"hpc":hpc,"knock_down":knock_down,"hbpc":hbpc})
+            else:
+                st.write('First check all the error msg for the data input')
+            #Main_datframe=pd.DataFrame(get_data())
+            st.write("## Experimental dataset")
+            st.write(pd.DataFrame(exp_data()))
+            st.write("## Management dataset")
+            st.write(pd.DataFrame(get_data()))
+            
 
 
             
@@ -482,41 +484,46 @@ else:
     #load = st.checkbox('Load soil data')
     #if load:
     
-    # Open the xdb file for writing.
-    if st.button('Create file'):
-        Main_datframe=pd.DataFrame(get_data())
-        Exp_dataframe=pd.DataFrame(exp_data())
-        st.write(len(Main_datframe.index))
-        st.write(len(Exp_dataframe.index))
-        if (not Main_datframe.empty and not Exp_dataframe.empty):
-        #
-            
-            #root,tree=read_soil(sdb_file)
-            st.write("Start writing")
-            create_xdb(
-            xdb_file,
-            sdb_file,
-            wdb_file,
-            cdb_file,
-            str(wx_id),
-            cultivar,
-            soilID_list,
-            N_rate_list,
-            SALUS_start,
-            SALUS_end,
-            Main_datframe,
-            start_doy=start_doy,
-            Irrigation=Irrigation,
-            Planting=Planting,
-            split_fertapp=split_fertapp,
-            Tillage=Tillage,
-            Harvest=Harvest)
-            st.write("Done writing")
-        else:
-            st.write("##Opps! File will not be created, Please check both the data boxes and add data to both dataframes")
-
-
-        
+        # Open the xdb file for writing.
+        if st.button('Create file'):
+            Main_datframe=pd.DataFrame(get_data())
+            Exp_dataframe=pd.DataFrame(exp_data())
+            st.write(len(Main_datframe.index))
+            st.write(len(Exp_dataframe.index))
+            if (not Main_datframe.empty and not Exp_dataframe.empty):
+            #
+                
+                #root,tree=read_soil(sdb_file)
+                st.write("Start writing")
+                create_xdb(
+                xdb_file,
+                sdb_file,
+                wdb_file,
+                cdb_file,
+                str(wx_id),
+                cultivar,
+                soilID_list,
+                N_rate_list,
+                SALUS_start,
+                SALUS_end,
+                Main_datframe,
+                start_doy=start_doy,
+                Irrigation=Irrigation,
+                Planting=Planting,
+                split_fertapp=split_fertapp,
+                Tillage=Tillage,
+                Harvest=Harvest)
+                st.write("Done writing")
+            else:
+                st.write("##Opps! File will not be created, Please check both the data boxes and add data to both dataframes")
+    elif (selection=="Plot weather"):
+        wx_id = st.text_input('### Weather Station ID','39.720420N_89.920985W')
+        label=["SRAD","Tmax","Tmin","Rain","WindSp","SH", "Rmax", "Rmin"]
+        df_wx=read_wx(wdb_file,wx_id)
+        xp=hip.Experiment.from_dataframe(df_wx[label])
+        ret_val = xp.to_streamlit( key="hip").display()
+    elif (selection=="Output analysis"):
+        st.write("###This section will be avaiable soon......")
         
     
 

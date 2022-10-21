@@ -21,10 +21,32 @@ import math
 import xml.etree.ElementTree as ET
 import pandas as pd
 import numpy as np
+from io import StringIO
+
 
 # Check if a file or directory exists.
 # If it does not exist, exit the script!
 # You must set fileflag=True for a file.
+# Read in the weather file (wdb.xml file).
+def read_wx(wdb_file,wx_id):
+    # Get the StationID (XML attribute) from the filename.
+    #wx_id = os.path.basename(wdb_file).replace(".wdb.xml", "")
+    print("Wxid ", wx_id)
+    # Read in the file using XML library.
+    tree = ET.parse(wdb_file)
+    root = tree.getroot()
+    # Find the "Weather" tag for the specific StationID.
+    wx = root.find("Stations[@StationID='" + wx_id + "']/Weather")
+    # Get the text from the "Weather" element.
+    wx_text = wx.text
+    # Convert the text to a pandas dataframe by reading it as a CSV.
+    # You must define the column names ["Year,DOY,SRAD,Tmax,Tmin,Rain,DewP,Wind,PAR"]
+    #wx_df = pd.read_csv(StringIO(wx_text), names=["Year","DOY","SRAD","Tmax","Tmin","Rain","DewP","Wind","PAR"])
+    wx_df = pd.read_csv(StringIO(wx_text), names=["Year","DOY","SRAD","Tmax","Tmin","Rain","WindSp","SH", "Rmax", "Rmin"])
+    # Check the dataframe.
+    print("Checking dataframe")
+    print(wx_df)
+    return(wx_df)
 def check_exists_error(tmp_location, **kwargs):
     fileflag = False
     if 'fileflag' in kwargs:
