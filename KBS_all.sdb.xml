@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SDB>
+  <Soils>
+    <Soil SoilID="T1R1S4txt85" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="70" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="22" BD="1.25" OC="0.87" TotN="0.1" Clay="14.4" Silt="40.8" Stones="0" pH="6.4" SHF="1" LL="0.0707" DUL="0.2068" SAT="0.5283" SWCN="3.7251" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="58" BD="1.43" OC="0.38" TotN="0.07" Clay="15.08" Silt="41.48" Stones="0" pH="6.4" SHF="0.4" LL="0.0993" DUL="0.2329" SAT="0.4604" SWCN="1.4702" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="70" BD="1.12" OC="0.2" TotN="0.05" Clay="24.4" Silt="50.8" Stones="10" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T1R2S5txt28" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="100" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="11" BD="0.95" OC="1.05" TotN="0.1" Clay="18.2" Silt="41.7" Stones="0" pH="6.4" SHF="0.7" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="48" BD="1.32" OC="0.62" TotN="0.09" Clay="18.64" Silt="42.14" Stones="0" pH="6.4" SHF="0.7" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="100" BD="1.22" OC="0.27" TotN="0.06" Clay="27.57" Silt="51.07" Stones="5" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T1R3S4txt5" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="100" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="21" BD="1.09" OC="1.45" TotN="0.13" Clay="14" Silt="31.2" Stones="2" pH="6.4" SHF="0.7" LL="0.04329221" DUL="0.181753585" SAT="0.588679245" SWCN="6.7" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="68" BD="1.24" OC="1.17" TotN="0.1" Clay="14.93" Silt="32.13" Stones="2" pH="6.4" SHF="0.4" LL="0.06743927" DUL="0.204640557" SAT="0.532075472" SWCN="3.946908332" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="100" BD="1.14" OC="0.47" TotN="0.06" Clay="23.37" Silt="40.57" Stones="5" pH="6.4" SHF="0.3" LL="0.069921258" DUL="0.204161025" SAT="0.569811321" SWCN="4.94511805" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T1R4S3txt53" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="80" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="26" BD="1.27" OC="0.83" TotN="0.08" Clay="16.6" Silt="51.7" Stones="0" pH="6.4" SHF="0.8" LL="0.087846448" DUL="0.223926707" SAT="0.520754717" SWCN="1.708871844" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="55" BD="1.39" OC="0.31" TotN="0.04" Clay="17.21" Silt="52.31" Stones="0" pH="6.4" SHF="0.4" LL="0.10813242" DUL="0.241621064" SAT="0.475471698" SWCN="0.844102445" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="80" BD="1.11" OC="0.27" TotN="0.02" Clay="25.97" Silt="61.07" Stones="5" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T1R5S4txt96" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="90" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="18" BD="1.3" OC="0.94" TotN="0.12" Clay="18.6" Silt="47.5" Stones="2" pH="6.4" SHF="0.7" LL="0.0950" DUL="0.2316" SAT="0.5094" SWCN="2.2194" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="44" BD="0.8" OC="0.3" TotN="0.05" Clay="18.94" Silt="47.84" Stones="2" pH="6.4" SHF="0.4" LL="0.0100" DUL="0.1405" SAT="0.6981" SWCN="0.8" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="90" BD="1.2" OC="0.45" TotN="0.09" Clay="21.65" Silt="50.55" Stones="2" pH="6.4" SHF="0.3" LL="0.0858" DUL="0.2200" SAT="0.5472" SWCN="3.4111" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R1S4txt17" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="120" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="26" BD="1.19" OC="1.3" TotN="0.15" Clay="14.1" Silt="26.1" Stones="0" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="58" BD="1.34" OC="0.38" TotN="0.07" Clay="14.78" Silt="26.78" Stones="0" pH="6.4" SHF="0.4" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="120" BD="1.39" OC="0.14" TotN="0.01" Clay="23.47" Silt="35.47" Stones="2" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R2S3txt76" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="120" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="21" BD="1.29" OC="0.82" TotN="0.11" Clay="18.4" Silt="51.9" Stones="0" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="46" BD="1.53" OC="0.36" TotN="0.07" Clay="18.79" Silt="52.29" Stones="0" pH="6.4" SHF="0.7" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="120" BD="1.15" OC="0.2" TotN="0.04" Clay="27.77" Silt="61.27" Stones="5" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R3S5txt80" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="150" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="18" BD="1.21" OC="1.27" TotN="0.11" Clay="17.4" Silt="46.8" Stones="0" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="52" BD="1.25" OC="1.03" TotN="0.11" Clay="17.94" Silt="47.34" Stones="2" pH="6.4" SHF="0.4" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="150" BD="1.3" OC="0.32" TotN="0.05" Clay="26.77" Silt="56.17" Stones="2" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R4S5txt62" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="120" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="16" BD="1.23" OC="1.21" TotN="0.11" Clay="12.3" Silt="33.8" Stones="0" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="79" BD="1.32" OC="0.6" TotN="0.07" Clay="15.87" Silt="37.37" Stones="2" pH="6.4" SHF="0.4" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="120" BD="1.22" OC="0.32" TotN="0.04" Clay="21.67" Silt="43.17" Stones="10" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R5S1txt110" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="120" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="11" BD="1.12" OC="1.12" TotN="0.12" Clay="16.9" Silt="38.9" Stones="2" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="32" BD="1.33" OC="0.63" TotN="0.09" Clay="16.95" Silt="38.95" Stones="2" pH="6.4" SHF="0.7" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="120" BD="1.27" OC="0.14" TotN="0.03" Clay="26.27" Silt="48.27" Stones="2" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T1R6S1txt17" SlDesc="" SLat="42.41" SLong="-85.38" Sldp="75" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="27" BD="1.38" OC="1.19" TotN="0.11" Clay="14.1" Silt="26.1" Stones="0" pH="6.4" SHF="0.8" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="49" BD="1.54" OC="0.2" TotN="0.03" Clay="14.56" Silt="26.56" Stones="0" pH="6.4" SHF="0.4" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="75" BD="1.41" OC="0.06" TotN="0.02" Clay="23.47" Silt="35.47" Stones="0" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+    <Soil SoilID="T2R6S3txt17" SlDesc="" SLat="42.41" SLong="-85.37" Sldp="100" PondMax="" Slsour="" SSite="" SCount="" Sltx="" Tacon="" Scom="" Salb="" U="" SWCON="" CN2="" Slnf="" Slpf="" Smhb="" Smpx="" Smke="">
+        <Layer MH="" ZLYR="22" BD="1.27" OC="1.37" TotN="0.15" Clay="14.1" Silt="26.1" Stones="0" pH="6.4" SHF="1" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="49" BD="1.35" OC="0.44" TotN="0.08" Clay="14.56" Silt="26.56" Stones="2" pH="6.4" SHF="0.7" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+        <Layer MH="" ZLYR="100" BD="1.35" OC="0.27" TotN="0.06" Clay="23.47" Silt="35.47" Stones="2" pH="6.4" SHF="0.3" LL="" DUL="" SAT="" SWCN="" pHKcl="" CEC="" CaCo="" KsMtrx="" SBioDepF="" TotP="" P_ActIno="" P_SloIno="" P_Labile="" />
+    </Soil>
+  </Soils>
+  <Version_Control>
+    <Version Number="1">
+      <ReleaseDate>11/26/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Initial Rel., beta v.</Notes>
+    </Version>
+    <Version Number="1.1">
+      <ReleaseDate>11/27/1999 12:00:00 AM</ReleaseDate>
+      <Notes>Testing</Notes>
+    </Version>
+    <Version Number="X_1.1">
+      <ReleaseDate>03/20/2014</ReleaseDate>
+      <Notes>Automatically converted from Access DB by salus_access2xml program.</Notes>
+    </Version>
+  </Version_Control>
+</SDB>
