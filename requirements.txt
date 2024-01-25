@@ -5,6 +5,6 @@ altair==5.2.0
 seaborn
 matplotlib
 hiplot==0.1.33
-sklearn
+scikit-learn
 scipy
 streamlit-tags==1.2.8
