@@ -64,7 +64,8 @@ def create_xdb(
     #Total number of run years for salus
     
     root,tree=read_soil(sdb_file)
-    with open(path + '/'+ xdb_file, 'w+') as out:
+    #with open(path + '/'+ xdb_file, 'w+') as out:
+    with open(xdb_file, 'w') as out:
             out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n")
             out.write("<XDB>\n")
 
