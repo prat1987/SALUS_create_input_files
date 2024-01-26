@@ -732,7 +732,7 @@ else:
             if (len(Main_datframe.index)>0 and len(Exp_dataframe.index)>0):
             #
                 #root,tree=read_soil(sdb_file)
-                st.write("Start writing",rotation)
+                #st.write("Start writing",rotation)
                 
                 xml_content=create_xdb(
                     path_file,
