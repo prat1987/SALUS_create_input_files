@@ -722,12 +722,12 @@ else:
                 Exp_dataframe=dataframe_e
             else:
                 Exp_dataframe=pd.DataFrame(st.session_state['exp_data'])
-            st.write("get_data contents:", pd.DataFrame(st.session_state['get_data']))
-            st.write("exp_data contents:", pd.DataFrame(st.session_state['exp_data']))
-            #Main_datframe=pd.DataFrame(st.session_state['get_data'])
-            st.write(len(Main_datframe.index))
-            st.write(Main_datframe)
-            st.write(len(Exp_dataframe.index))
+            # st.write("get_data contents:", pd.DataFrame(st.session_state['get_data']))
+            # st.write("exp_data contents:", pd.DataFrame(st.session_state['exp_data']))
+            # #Main_datframe=pd.DataFrame(st.session_state['get_data'])
+            # st.write(len(Main_datframe.index))
+            # st.write(Main_datframe)
+            # st.write(len(Exp_dataframe.index))
             #if (not Main_datframe.empty and not Exp_dataframe.empty):
             if (len(Main_datframe.index)>0 and len(Exp_dataframe.index)>0):
             #
