@@ -87,7 +87,7 @@ def create_xdb(
     for j,enum in enumerate(Exp_dataframe['Experiment_number']):
         Main_datframe=Main_datframe_all[Main_datframe_all['Experiment_number']==enum]
         Main_datframe=Main_datframe.reset_index(drop=True)
-        st.write("---Writing for Experiment number:", enum )
+        #st.write("---Writing for Experiment number:", enum )
         # Experiment title to distinguish the differences in each experiment.
         nyrs = Exp_dataframe['SALUS_end'][j] - Exp_dataframe['SALUS_start'][j] + 1
         out.write("  <Experiment ExpID=\"" + str(enum) + "\" Title=\"" + Exp_dataframe["Experiment_name"][j]
